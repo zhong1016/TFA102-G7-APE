@@ -1,0 +1,75 @@
+* {
+    font-family: sans-serif, 'Kosugi Maru';
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #4e5562;
+}
+
+table.TB_COLLAPSE {
+    width: 90%;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+}
+
+table.TB_COLLAPSE th {
+    padding: 5px 0px;
+    color: #fff;
+    background-color: #915957c2;
+    font-weight: unset;
+}
+
+table.TB_COLLAPSE td:nth-child(1) {
+    padding: 5px;
+    color: #555;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #915957;
+    width: 25%;
+}
+
+table.TB_COLLAPSE td:nth-child(2) {
+    padding: 5px;
+    color: #555;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #915957;
+    width: 75%;
+}
+
+table.TB_COLLAPSE img {
+    width: 50%;
+}
+
+.button1 {
+    position: relative;
+    left: 42%;
+    background-color: white;
+    color: #b08868d8;
+    border-style: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    margin: 0 auto 50px;
+}
+
+.button1:hover {
+    background-color: #b08868d8;
+    color: white;
+}
+
+.panel-text {
+   overflow: auto;
+  }

@@ -1,0 +1,119 @@
+* {
+	margin: auto;
+	padding: 0px;
+	font-family: "Kosugi Maru", sans-serif;
+}
+
+html, body {
+	font: 15px verdana, Times New Roman, arial, helvetica, sans-serif,
+		Microsoft JhengHei;
+	width: 90%;
+	height: 90%;
+	background: #eeeeda;
+}
+
+.panel {
+/* 	border: 2px solid #0078ae; */
+	border-radius: 5px;
+	width: 100%;
+}
+
+.message-area {
+	height: 70%;
+	resize: none;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.input-area {
+	background: #bfdcba;
+    box-shadow: inset 0 0 5px;
+}
+
+.input-area input {
+	margin: 0.5em 0em 0.5em 0.5em;
+}
+
+.text-field {
+	border: 1px solid grey;
+	padding: 0.2em;
+	box-shadow: 0 0 2px ;
+}
+
+h1 {
+	font-size: 1.5em;
+	padding: 5px;
+	margin: 5px;
+	color: gray;
+}
+
+#userName {
+	width: 20%;
+}
+
+#message {
+	min-width: 50%;
+	max-width: 60%;
+}
+
+.statusOutput {
+	background: #869c82;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid grey;
+    padding: 0.2em;
+    box-shadow: 0 0 5px;
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+
+#sub{
+    display: none;
+}
+
+@media all and (max-width:575.98px) {
+    
+    .statusOutput{
+        display: none;
+    }
+
+    h1{
+        font-size: 17px;
+        text-align: center;
+        color: #0078ae;
+    }
+    
+     #sub{
+        display: block;
+    }
+    
+    #userName{
+    	display: none;
+    }
+    
+    #message{
+    	display: none;
+    }
+    
+    #sendMessage{
+    	display: none;
+    }
+    #disconnect{
+    	display: none;
+    }
+    
+    #connect{
+    	display: none;
+    }
+    
+    .message-area {
+	height: 90%;
+	resize: none;
+	box-sizing: border-box;
+	overflow: auto;
+}
+    
+}

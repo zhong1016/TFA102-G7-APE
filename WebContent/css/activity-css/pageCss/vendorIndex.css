@@ -1,0 +1,279 @@
+* {
+	box-sizing: border-box;
+	/* margin: 0;
+            padding: 0; */
+	/* font-size: 0; */
+	font-family: sans-serif, 'Kosugi Maru';
+	color: #4e5562;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+body {
+	background-color: #F4ECCF;
+	height: inherit;
+	margin: 0;
+}
+
+.div_bg {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	display: inline-block;
+
+	/* border-style: double; */
+}
+
+.bg_range {
+	position: relative;
+	width: 90%;
+	height: max-content;
+	top: 40px;
+	padding: 20px 0;
+	margin: 0 5% 5%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 50px;
+}
+
+.div_top {
+	width: 100%;
+	height: 300px;
+	position: absolute;
+
+	/* border-style: double; */
+}
+
+.div_top img {
+	width: 100%;
+}
+
+.div_group {
+	width: 100%;
+	height: 80%;
+}
+
+.rounded-start {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.Sidebar1 {
+	position: relative;
+	margin: 0 auto 15px;
+	left: 2%;
+	height: 50px;
+	width: 95%;
+	display: inline-block;
+	/* top: 240px; */
+}
+
+.div_button1 {
+	display: inline-block;
+	margin: 30px auto 30px;
+}
+
+.button1 {
+	position: relative;
+	left: 205%;
+	background-color: white;
+	color: #b08868d8;
+	border-style: none;
+	/* border: 2px solid #008CBA; */
+	font-size: 28px;
+	border-radius: 30px;
+	padding: 5px 15px 5px 15px;
+	display: inline-block;
+}
+
+.button2 {
+	position: relative;
+	background-color: white;
+	border-radius: 20px;
+	border-style: none;
+	padding: 5px 8px 5px 8px;
+}
+
+.button2 img {
+	opacity: 0.6;
+	width: 80%;
+}
+
+.button1:hover {
+	background-color: #b08868d8;
+	color: white;
+}
+
+.button2:hover {
+	background-color: #b08868d8;
+}
+
+.view_edit {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.container-3 {
+	width: 300px;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+	display: inline-block;
+	bottom: 5px;
+	right: 139px;
+}
+
+.container-3 input#search {
+	width: 430px;
+	height: 50px;
+	background: #ffffff;
+	border: none;
+	font-size: 10pt;
+	float: left;
+	color: #4e5562;
+	padding-left: 45px;
+	padding-top: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 10px;
+	outline: none;
+}
+
+.container-3 .icon {
+	position: absolute;
+	margin-left: 17px;
+	margin-top: 15px;
+	z-index: 1;
+	color: #4e5562;
+	-webkit-transition: all .55s ease;
+	-moz-transition: all .55s ease;
+	-ms-transition: all .55s ease;
+	-o-transition: all .55s ease;
+	transition: all .55s ease;
+}
+
+.block_pagetop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 90;
+	/* border-style: double; */
+}
+
+.block_pagetop a {
+	border-radius: 80px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #EEEEEE;
+	opacity: 0.6;
+	font-size: 16px;
+	position: relative;
+	text-align: center;
+	line-height: 80px;
+	transition: all 0.5s 0s ease;
+	text-decoration: unset;
+	color: unset;
+}
+
+.block_pagetop a span {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -6px;
+	width: 12px;
+	height: 14px;
+	background:
+		url("<%=request.getContextPath()%>/img/activity-img/arrow.png")
+		no-repeat center center;
+	background-size: 26px auto;
+	transition: all 0.5s 0s ease;
+}
+
+.hide {
+	transform: translateX(120%);
+}
+
+.act_infor {
+	background-color: rgb(0 0 0/ 8%);
+	border-radius: 20px;
+	margin: 0 20px;
+}
+
+.act_list {
+	background-color: unset;
+	border-style: unset;
+}
+
+.block2 {
+	position: relative;
+	width: 100%;
+	height: 25px;
+	margin: 20px auto 0;
+	background-color: rgba(0, 0, 0, 0.425);
+	top: 32px;
+}
+
+.card-deco span {
+	font-size: 18px;
+	color: darkslateblue;
+}
+
+.title {
+	color: brown;
+	font-size: 20px;
+	text-decoration: underline;
+	margin: 8px 0 19px;
+}
+
+a[title]:hover:after {
+	content: attr(title);
+	padding: 4px 8px;
+	color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0;
+	top: 100%;
+	white-space: nowrap;
+	z-index: 2;
+	border-radius: 5px;
+	background: red;
+}
+
+.createAct {
+	left: 1143px;
+}
+
+.col-md-4 {
+	margin: 0 0 30px;
+	height: 350px;
+}
+
+.card-body {
+	margin: 0px 20px;
+}
+
+.view_edit_icon {
+	display: inline-flex;
+	margin: 20px 0 20px -3px;
+}
+
+.card-title {
+	margin-bottom: .5rem;
+	display: inline-grid;
+}
+
+.flower_pic {
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 0px;
+	left: 89%;
+	bottom: 77px;
+}
+
+.flower_pic img {
+	width: 100%;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>會員前台 基本版面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/HF.css" />
+  <link rel="stylesheet" href="../css/ticket-css/backend.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-div">
+      <div class="header-img">
+        <a href="/APE/index.html"><img class="logo" src="../img/APE3.svg" alt="" /></a>
+      </div>
+      <div class="nav" id="header">
+<!--         <span class="header-singin"><a href="">登入</a>&emsp;|&emsp;<a href="">註冊</a></span> -->
+        <ul>
+          <li><a class="a1" href="#">線上商城</a></li>
+          <li>
+            <a class="a1" href="#">展覽活動</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="Schedule.html">全年檔期</a></li>
+              <li class="a2"><a href="">優惠資訊</a></li>
+              <li class="a2"><a href="basicTicket.html">報名查詢</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="#">地圖導覽</a></li>
+          <li>
+            <a class="a1" href="#">廠商專區</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="">廠商後台</a></li>
+              <li class="a2"><a href="">場地租借</a></li>
+              <li class="a2"><a href="">活動查詢</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="#">討論區</a></li>
+          <li>
+            <a class="a1" href="#">聯絡客服</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="">意見回饋</a></li>
+              <li class="a2"><a href="">常見問答</a></li>
+              <li class="a2"><a href="">贈品兌換</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="#">會員中心</a></li>
+          <a class="a1-shop" href="#"><img class="shop" src="../img/index-img/shop.png" alt="" /></a>
+        </ul>
+      </div>
+  </header>
+
+
+  <!-- 前台面板 -->
+  <div class="body-content">
+
+    <!-- 面板列 -->
+    <div class="body_content_list">
+      <div class="name">
+        <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/d/d8/Mario_NSMBW.png/250px-Mario_NSMBW.png" alt="">
+        <p>王瑪莉</p>
+      </div>
+
+      <!--會員資料 -->
+      <div class="body_member_list">
+        <img src="../img/ticket-img/people.svg" alt="">
+        <a href="#">會員資料</a>
+      </div>
+      <!-- 買家專區 -->
+      <div class="body_buyer_list">
+        <img src="../img/ticket-img/cart.svg" alt="">
+        <a href="#" class="buyer_click">買家專區</a>
+      </div>
+      <div class="body_buyer_list_all on">
+        <ul>
+          <li><a href="">訂單查詢</a></li>
+          <li><a href="">商品追蹤清單</a></li>
+        </ul>
+      </div>
+      <!--賣家專區  -->
+      <div class="body_seller_list">
+        <img src="../img/ticket-img/shop.svg" alt="">
+        <a href="#" class="seller_click">賣家專區</a>
+      </div>
+      <div class="body_seller_list_all on">
+        <ul>
+          <li><a href="#">訂單查詢</a></li>
+          <li><a href="#">商品管理</a></li>
+          <li><a href="#">商品上架</a></li>
+        </ul>
+      </div>
+
+      <!-- 攤位管理 -->
+      <div class="body_stall_list">
+        <img src="../img/ticket-img/stall.svg" alt="">
+        <a href="#">攤位管理</a>
+      </div>
+      <!-- 我的票券 -->
+      <div class="body_ticket_list">
+        <img src="../img/ticket-img/ticket.svg" alt="">
+        <a href="#">我的票券</a>
+      </div>
+      <!--文章管理 -->
+      <div class="body_article_list">
+        <img src="../img/ticket-img/list.svg" alt="">
+        <a href="#">文章管理</a>
+      </div>
+    </div>
+
+    <!-- 面板內容 -->
+    <div class="body_content_data" style="border:solid 2px red;" id="ticket">
+      <div class="body_content_data_member">
+        <h1 style="text-align: center;">所有活動票券</h1>
+        <div style="width: 100%;height: 500px;margin-top: 2%;">
+          <table style="margin: auto;font-size: 1.5rem;">
+            <thead>
+              <tr>
+                <th></th>
+                <th>姓名</th>
+                <th>身分證號</th>
+                <th>電子信箱</th>
+                <th>展覽活動</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(Ticket,index) in ticket">
+                <td style="display: none;">{{Ticket.ticketNo}}</td>
+                <td>{{index + 1}}</td>
+                <td >
+                  {{Ticket.Name}}
+                  <br>
+                  <input type="text" v-model="Ticket.Name" :class="display(index)">
+                </td>
+                <td>{{Ticket.idCard}}
+                  <br>
+                  <input type="text" v-model="Ticket.idCard" :class="display(index)">
+                </td>
+                </td>
+                <td>{{Ticket.Email}}
+                  <br>
+                  <input type="text" v-model="Ticket.Email" :class="display(index)">
+                </td>
+                <td>{{Ticket.exhibitionNo}}
+                  <br>
+                  <input type="text" v-model="Ticket.exhibitionNo" disabled :class="display(index)">
+                </td>
+                <td>
+                  <button style="font-size: 1rem;" @click="update(index)" :disabled="abc()">修改</button>
+                  <br>
+                  <button style="font-size: 1rem;margin-top: 5%;" :class="display(index)" @click="check(index)">確認修改</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/vue.js"></script>
+  <script src="../js/HF.js"></script>
+  <script src="../js/ticket-js/basicTicket.js"></script>
+  <script src="/APE/js/member/memHeader.js"></script>
+</body>
+</html>

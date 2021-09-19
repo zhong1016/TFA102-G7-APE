@@ -1,0 +1,326 @@
+.on{
+    display: none;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: lightgray;
+}.on {
+    display: none;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: rgb(199, 199, 199);
+}
+
+/* 圖片姓名 */
+
+div.name {
+    /* border: 1px solid red; */
+    margin-top: 5%;
+}
+
+div.body_content_list {
+    /* border: 1px solid red; */
+    background-color: #577590;
+    width: 20%;
+    border: none;
+    border-radius: 25px 0 0 25px;
+}
+
+div.body_content_list div.name img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 60%;
+}
+
+div.name p {
+    border: none;
+    background-color: #474747b7;
+    height: 40px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+}
+
+/* 會員列表 */
+
+div.body-content {
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: 825px;
+    margin: auto;
+    display: flex;
+}
+
+div.body_member_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+div.body_member_list a {
+    /* color: black; */
+    /* font-weight: none; */
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* 買家專區 */
+
+div.body_buyer_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+div.body_buyer_list a {
+    /* color: black; */
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+    font-size: 1.0rem;
+    margin: 10px;
+}
+
+.body_buyer_list_all li {
+    margin-top: 5%;
+}
+
+.body_buyer_list_all ul {
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+/* 賣家專區 */
+
+div.body_seller_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+div.body_seller_list a {
+    /* color: black; */
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.body_seller_list_all li {
+    margin-top: 5%;
+}
+
+.body_seller_list_all ul {
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+/* 攤位管理 */
+
+div.body_stall_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+div.body_stall_list a {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* 我的票券' */
+
+div.body_ticket_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+div.body_ticket_list a {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* 文章管理 */
+
+div.body_article_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+div.body_article_list a {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* 面板主內容 */
+
+div.body_content_data {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 25px 25px 0;
+}
+
+div.body_content_data_member {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+div.body_content_data_member p {
+    font-size: 2.5rem;
+}
+/* 圖片姓名 */
+div.name{
+    /* border: 1px solid red; */
+    margin-top: 5%;
+}
+div.body_content_list{
+    /* border: 1px solid red; */
+    background-color: #6b88b7;
+    width: 20%;
+}
+div.body_content_list div.name img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+div.name p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* 會員列表 */
+div.body-content{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: 825px;
+    margin: auto;
+    display: flex;
+}
+
+div.body_member_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+div.body_member_list a{
+    /* color: black; */
+    /* font-weight: none; */
+    font-size: 1.5rem;
+}
+
+
+/* 買家專區 */
+
+div.body_buyer_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+div.body_buyer_list a{
+    /* color: black; */
+    font-size: 1.5rem;
+}
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+.body_buyer_list_all li{
+    margin-top: 5%;
+}
+.body_buyer_list_all  ul{
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+/* 賣家專區 */
+
+div.body_seller_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+div.body_seller_list a{
+    /* color: black; */
+    font-size: 1.5rem;
+}
+.body_seller_list_all li{
+    margin-top: 5%;
+}
+.body_seller_list_all  ul{
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+/* 攤位管理 */
+
+div.body_stall_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+div.body_stall_list a{
+    font-size: 1.5rem;
+}
+
+
+/* 我的票券' */
+div.body_ticket_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+div.body_ticket_list a{
+    font-size: 1.5rem;
+}
+
+/* 文章管理 */
+div.body_article_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+div.body_article_list a{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 面板主內容 */
+div.body_content_data{
+    width:80%;
+    border: 1px solid gray
+}
+
+div.body_content_data_member{
+    margin-top: 5%;
+    margin-left: 3%;
+    
+}
+div.body_content_data_member p{
+    font-size: 2.5rem;
+}
+
+
+
+

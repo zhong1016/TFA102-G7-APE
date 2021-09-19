@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>APE2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>connection.driver</param-name>
+    <param-value>com.mysql.cj.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>connection.url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/APEMAX?serverTimezone=Asia/Taipei&amp;useSSL=false</param-value>
+  </context-param>
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>David</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>123456</param-value>
+  </context-param>
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/APEMAX</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <servlet>
+    <servlet-name>MemServlet</servlet-name>
+    <servlet-class>com.mem.controller.MemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemServlet</servlet-name>
+    <url-pattern>/members/MemServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CopServlet</servlet-name>
+    <servlet-class>com.cop.controller.CopServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CopServlet</servlet-name>
+    <url-pattern>/company/CopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SerServlet</servlet-name>
+    <servlet-class>com.ser.controller.SerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SerServlet</servlet-name>
+    <url-pattern>/service/SerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ActivityServlet</servlet-name>
+    <servlet-class>com.activity.controller.ActivityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActivityServlet</servlet-name>
+    <url-pattern>/activity/ActivityServlet.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RentServlet</servlet-name>
+    <servlet-class>com.rent.controller.RentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RentServlet</servlet-name>
+    <url-pattern>/rent/RentServlet.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MapStatus</servlet-name>
+    <servlet-class>com.status.tool.MapStatus</servlet-class>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MapStatus</servlet-name>
+    <url-pattern>/MapStatus</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ActivityPic</servlet-name>
+    <servlet-class>com.activity.model.ActivityPic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActivityPic</servlet-name>
+    <url-pattern>/activity/ActivityPic</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>RentPic</servlet-name>
+    <servlet-class>com.rent.model.RentPic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RentPic</servlet-name>
+    <url-pattern>/rent/RentPic</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>RestaurantServlet</servlet-name>
+    <servlet-class>com.restaurant.controller.RestaurantServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestaurantServlet</servlet-name>
+    <url-pattern>/restaurant/restaurant.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RestaurantServlet</servlet-name>
+    <url-pattern>/map/restaurant/restaurant.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LocationServlet</servlet-name>
+    <servlet-class>com.location.controller.LocationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocationServlet</servlet-name>
+    <url-pattern>/location/location.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LocationServlet</servlet-name>
+    <url-pattern>/map/location/location.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

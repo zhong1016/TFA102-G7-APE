@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>艾普藝森</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/index-css/index.css ">
+<!--   <link rel="stylesheet" href="css/HB.css" /> -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>  
+  <header>
+    <div class="header-div">
+      <div class="header-img">
+        <a href="/APE/index.html"><img class="logo" src="img/APE3.svg" alt="" /></a>
+      </div>
+      <div class="nav" id="header">
+        <ul>
+          <li><a class="a1" href="/APE/store/store.jsp">線上商城</a></li>
+          <li>
+            <a class="a1" href="ticket/Schedule.html">展覽活動</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="">全年檔期</a></li>
+              <li class="a2"><a href="">優惠資訊</a></li>
+              <li class="a2"><a href="">報名查詢</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="#">地圖導覽</a></li>
+          <li>
+            <a class="a1" href="/APE/company/CopDtal.jsp">廠商專區</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="/APE/activity/vendorcheackpageall.jsp">廠商後台</a></li>
+              <li class="a2"><a href="/APE/activity/activityIndex.jsp">場地租借</a></li>
+              <li class="a2"><a href="">活動查詢</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="/APE/articleMain/fourm.jsp">討論區</a></li>
+          <li>
+            <a class="a1" href="/APE/service/service.jsp">聯絡客服</a>
+            <ul class="menu-ul">
+              <li class="a2"><a class="SER_MSG" href="/APE/service/ser_act.jsp" target="insideme">意見回饋</a></li>
+              <li class="a2"><a class="SER_QnA" href="/APE/service/ser_qna.jsp" target="insideme">常見問答</a></li>
+              <li class="a2"><a class="SER_PRO" href="/APE/service/ser_pro.jsp" target="insideme">贈品兌換</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="/APE/members/MemDtal.jsp">會員中心</a></li>
+          <a class="a1-shop" href=""><img class="shop" src="img/index-img/shop.png" alt="" /></a>
+        </ul>
+      </div>
+      <input type="checkbox" name="menu-switcher" id="menu-switcher" />
+      <label for="menu-switcher" class="hamburger">
+        <div class="hamburger-line"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="/APE/store/store.jsp">線上商城</a></li>
+        <li><a href="">展覽活動</a></li>
+        <li><a href="">地圖導覽</a></li>
+        <li><a href="">廠商專區</a></li>
+        <li><a href="/APE/articleMain/fourm.jsp">討論區</a></li>
+        <li><a href="/APE/service/service.jsp">聯絡客服</a></li>
+        <li><a href="/APE/members/MemDtal.jsp">會員中心</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 輪播圖 -->
+  <div class="container" id="container1">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="allimg in wrapperimg"><a href=""><img class="apeimg" :src="allimg" alt=""></a>
+        </div>
+      </div>
+      <!-- 分頁 -->
+      <div class="swiper-pagination"></div>
+      <!-- 按钮 -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+  </div>
+  
+  <!-- 展覽內容 -->
+  <section class="container" id="exhibition">
+    <div class="row">
+      <div class="col-6">
+        <div style="overflow: hidden;">
+        <a href=""><img class="eximg" :src="alleximg[0]" alt=""></a>
+        </div>
+        <div class="day">
+          <div class="dayex">
+            <span class="dayex-ac">專櫃活動</span>
+            <span class="dayex-time">2021-08-08</span>
+          </div>
+          <a href="">
+            <h6>歡慶父親節-全館美食優惠大集合</h6>
+          </a>
+          <p>場地租借-論壇/記者會/演唱會/全方位活動空間提案</p>
+        </div>
+      </div>
+
+      <div class="col-6" >
+        <div class="row">
+          <div class="col-6">
+            <div style="overflow: hidden;">
+            <a href=""><img class="eximg" :src="alleximg[1]" alt=""></a>
+            </div>
+            <!-- 活動類型、標題、內容 -->
+            <div class="day">
+              <div class="dayex">
+                <span class="dayex-ac">專櫃活動</span>
+                <span class="dayex-time">2021-08-08</span>
+              </div>
+              <a href="">
+                <h6>歡慶父親節-全館美食優惠大集合</h6>
+              </a>
+              <p>場地租借-論壇/記者會/演唱會/全方位活動空間提案</p>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div style="overflow: hidden;">
+            <a href=""><img class="eximg" :src="alleximg[2]" alt=""></a>
+          </div>
+            <!-- 活動類型、標題、內容 -->
+            <div class="day">
+              <div class="dayex">
+                <span class="dayex-ac">專櫃活動</span>
+                <span class="dayex-time">2021-08-08</span>
+              </div>
+              <a href="">
+                <h6>歡慶父親節-全館美食優惠大集合</h6>
+              </a>
+              <p>場地租借-論壇/記者會/演唱會/全方位活動空間提案</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div style="overflow: hidden;">
+            <a href=""><img class="eximg" :src="alleximg[3]" alt=""></a>
+          </div>
+            <!-- 活動類型、標題、內容 -->
+            <div class="day">
+              <div class="dayex">
+                <span class="dayex-ac">專櫃活動</span>
+                <span class="dayex-time">2021-08-08</span>
+              </div>
+              <a href="">
+                <h6>歡慶父親節-全館美食優惠大集合</h6>
+              </a>
+              <p>場地租借-論壇/記者會/演唱會/全方位活動空間提案</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="overflow: hidden;">
+            <a href=""><img class="eximg" :src="alleximg[4]" alt=""></a>
+            </div>
+            <!-- 活動類型、標題、內容 -->
+            <div class="day">
+              <div class="dayex">
+                <span class="dayex-ac">專櫃活動</span>
+                <span class="dayex-time">2021-08-08</span>
+              </div>
+              <a href="">
+                <h6>歡慶父親節-全館美食優惠大集合</h6>
+              </a>
+              <p>場地租借-論壇/記者會/演唱會/全方位活動空間提案</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 討論區 -->
+  <div class="container" id="article">
+    <div class="row align-items-center">
+      <div class="col-3 d-flex justify-content-center">
+        <div class="arnew">
+          <h3 class="d-flex justify-content-center">News</h3>
+          <h3>最新消息</h3>
+        </div>
+      </div>
+      <div class="col-9">
+        <a href="">
+          <div class="row actime">
+            <div class="col-2 d-flex justify-content-center"> {{alltime.time[0]}} </div>
+            <div class="col-10"> {{allarticle.article[0]}} </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="row actime">
+            <div class="col-2 d-flex justify-content-center">{{alltime.time[1]}}</div>
+            <div class="col-10">{{allarticle.article[1]}}</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="row actime">
+            <div class="col-2 d-flex justify-content-center">{{alltime.time[2]}}</div>
+            <div class="col-10">{{allarticle.article[2]}}</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="row actime">
+            <div class="col-2 d-flex justify-content-center">{{alltime.time[3]}}</div>
+            <div class="col-10">{{allarticle.article[3]}}</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="row actime">
+            <div class="col-2 d-flex justify-content-center">{{alltime.time[4]}}</div>
+            <div class="col-10">{{allarticle.article[4]}}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 展覽推薦 -->
+  <div class="container apeh1">
+    <h4 style="margin-bottom:0">Free Ticket</h4>
+    <h5 style="font-weight: bold;">免費索票</h5>
+    <a href="" class="arhref">更多展覽+</a>
+  </div>
+
+  <div class="container freeex">
+    <div class="row">
+      <div class="col-4" >
+        <a href="">
+          <div style="overflow: hidden;">
+          <img class="eximg" src="img/index-img/1.jpg" alt="">
+          </div>
+          場地租借-論壇/演唱會/全方位活動空間提案
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="">          
+          <div style="overflow: hidden;">
+          <img class="eximg" src="img/index-img/2.jpg" alt="">
+          </div>
+          場地租借-論壇/演唱會/全方位活動空間提案
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="">          
+          <div style="overflow: hidden;">
+          <img class="eximg" src="img/index-img/3.jpg" alt="">
+          </div>
+          場地租借-論壇/演唱會/全方位活動空間提案
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer-div">
+      <div class="footer-img">
+        <a href=""><img class="footer-logo" src="img/APE3.svg" alt="" /></a>
+        <div class="footer-p">
+          <h3>艾普藝森國際展覽</h3>
+          <span>104台北市中山區南京東路三段219號5樓</span>
+          <br>
+          <span>業務洽詢：huangwei_wu@wiedu.com</span>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">會員協議</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">加入我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <p>
+        <span class="footer-span">
+          <span>Copyrights ©2021 All Rights Reserved by A.P.E</span>
+        </span>
+      <div class="footer-i">
+        <div class="footer-message">
+          <i><a href=""><img src="img/index-img/Line.png" alt=""></a></i>
+          <i><a href=""><img src="img/index-img/FB.png" alt=""></a></i>
+          <i><a href=""><img src="img/index-img/instagram-logo.png" alt=""></a></i>
+        </div>
+<!--       </div>http://localhost:8081/APE/index.html -->
+      </p>
+    </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/index-js/index.js"></script>
+  <script src="js/index-js/Swiper.js"></script>
+<!--   <script src="js/member/memHeader.js"></script> -->
+  <script src="js/testmember.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.update_manager{
+    width: 80%;
+    height: 65%;
+    margin: 10% auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-left: 3%;
+    padding-top: 3%;
+    
+}
+li{
+    margin-left:15% ;
+    /* list-style: none; */
+    font-size: 1.5rem;
+}
+td{
+    font-size: 3rem;
+    text-align: center;
+}
+input{
+    font-size: 2rem;
+}
+input[value="送出修改"]{
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-top: 3%;
+}

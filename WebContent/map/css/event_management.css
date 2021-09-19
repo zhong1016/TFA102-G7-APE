@@ -1,0 +1,35 @@
+.events_management{
+    display: flex;
+    margin-top: 10%;
+}
+.events_management a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+    border: 1px solid lightgrey;
+    padding: 5px 5px;
+}
+.events_management a:hover{
+    color: lightgrey;
+}
+.events_management div:first-child {
+    margin-left: 15%;
+}
+.events_management div:nth-child(2) {
+   margin-left: 2%;  
+}
+
+.events_management_list{
+    border:1px solid grey;
+    margin: 0 auto;
+    margin-top: 0.5%;
+    width: 90%;
+    height: 60%;
+}
+.events_checklist{
+    border:1px solid grey;
+    margin: 0 auto;
+    margin-top: 0.5%;
+    width: 90%;
+    height: 60%;
+}

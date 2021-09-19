@@ -1,0 +1,280 @@
+.Mer_bg {
+    /* border: 1px solid rgb(52, 15, 141); */
+    width: 100%;
+    background-image: url(/APE/img/member/MemBackground.png);
+    background-repeat: no-repeat;
+    /* background-position: left bottom; */
+    background-size: cover;
+    display: flex;
+}
+
+.mem_range {
+    /* border: 1px solid springgreen; */
+    position: relative;
+    width: 80%;
+    min-width: 574px;
+    height: max-content;
+    padding: 5%;
+    margin: auto;
+    font-size: 0px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.service_rflower {
+    /* border: 1px solid darkblue; */
+    position: absolute;
+    height: 25%;
+    width: 9%;
+    right: -1%;
+    bottom: -3%;
+}
+
+.service_but {
+    /* border: 1px solid red; */
+    position: absolute;
+    height: 2%;
+    width: 100%;
+    background-color: rgb(99, 86, 71);
+    right: -12%;
+    bottom: -3.3%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.memleft,
+.memright {
+    /* border: 1px solid lightblue; */
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    min-width: 150px;
+    font-size: 0;
+}
+
+.memlist,
+.memrightul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.memlist li,
+.memrightul li {
+    /* border: 1px solid orchid; */
+    display: inline-block;
+    text-align: center;
+}
+
+.memlist li a,
+.memrightul li a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-top: rgb(255, 255, 255, 0.8);
+    padding: 2px 20px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    position: relative;
+    color: #ccc;
+    bottom: 1px;
+    font-size: 8px;
+}
+
+.memlist li a ::after,
+.memrightul li a ::after {
+    content: "";
+    position: absolute;
+    width: calc(100% +2px);
+    height: 1%;
+    background-color: rgb(255, 255, 255, 0.8);
+    top: 1px;
+    left: -1px;
+    z-index: 1;
+}
+
+.memlist li.active a,
+.memrightul li.active a {
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    color: black;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.memlist>li>a>img,
+.memrightul>li>a>img {
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.memlist>li.active>a>img,
+.memrightul>li.active>a>img {
+    vertical-align: middle;
+    opacity: 1;
+}
+
+.mempanel,
+.memse {
+    display: none;
+}
+
+.mempanel.active,
+.memse.active {
+    /* border: 1px solid slateblue; */
+    background-color: rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 3%;
+    height: 60vh;
+    min-height: 300px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.mempanel.active label,
+.memse.active label {
+    display: block;
+}
+
+.testa {
+    opacity: 0;
+}
+
+.input-button {
+    font-size: 16px;
+}
+.input-button {
+    font-size: 16px;
+}
+
+label.input-label input {
+    /* display: block; */
+    font-size: 16px;
+    padding: 5px 10px;
+    outline: none;
+}
+label.input-label span.mempop{
+	position: absolute;
+	background: #fed;
+	border: 1px solid rgba(0,0,0,.3);
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	display: none;
+	top: 45px;
+}
+label.input-label input:focus + span.mempop{
+    display:block;
+}
+  
+label.input-label span.mempop:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 16px;
+    padding: 5px;
+    background: #fed;
+    border: 1px solid rgba(0,0,0,.3);
+    border-right: 0;
+    border-bottom: 0;
+
+    transform: rotate(45deg);
+}
+
+div.memPswdChange{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .5);
+    display: none;
+}
+div.memPswdChange > article{
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.copPswdChange{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    background-color: hsla(0, 0%, 0%, .5);
+    display: none;
+}
+div.copPswdChange > article{
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+}
+
+.membtn {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:6px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.membtn:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.center1{
+    /* border: 1px solid slateblue;  */
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.button1{
+    text-align: right;
+}
+@media (max-width: 991.98px) {
+    .service_rflower {
+        height: 18%;
+        width: 10%;
+    }
+    .memlist li a,
+    .memrightul li a {
+        font-size: 3px;
+    }
+    .memlist li.active a,
+    .memrightul li.active a {
+        font-size: 6px;
+    }
+    .memlist>li>a>img,
+    .memrightul>li>a>img {
+        opacity: 0.5;
+        width: 24%;
+    }
+    .memlist>li.active>a>img,
+    .memrightul>li.active>a>img {
+        opacity: 1;
+    }
+}

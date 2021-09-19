@@ -1,0 +1,167 @@
+.bg_img {
+    /*背景圖*/
+    /* border: solid 1px black; */
+    width: 100%;
+    background-image: url(/APE/img/service/sbg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    display: flex;
+}
+
+.bg_range {
+    /*背景前底圖*/
+    /* border: 1px solid springgreen; */
+    position: relative;
+    width: 80%;
+    min-width: 574px;
+    height: max-content;
+    padding: 5%;
+    margin: auto;
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.service_left {
+    /*左側欄大小*/
+    /* border: 1px solid lightblue; */
+    position: sticky;
+    padding: 1%;
+    width: 20%;
+    min-width: 150px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.service_left>Ul>li>a {
+    /*左側欄顏色*/
+    margin: 0 0 5% auto;
+    text-align: center;
+    display: block;
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    color: #b08868d8;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.service_left>Ul>li>a:hover {
+    /*左側欄滑鼠移動*/
+    background-color: #b08868d8;
+    color: white;
+}
+
+.ser.on {
+    /*左側欄點選後*/
+    background-color: #b08868d8;
+    color: white;
+}
+
+.service_right {
+    /*右側欄*/
+    /* border: 1px solid rgb(88, 44, 44); */
+    position: relative;
+    padding: 1% 2%;
+    width: 78%;
+    min-width: 515px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 16px;
+    position: sticky;
+}
+
+.insideme {
+    border: none;
+    width: 100%;
+    height: 500px;
+    overflow: inherit;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+}
+
+.service_rflower {
+    /* border: 1px solid darkblue; */
+    position: absolute;
+    height: 25%;
+    width: 9%;
+    right: -1%;
+    bottom: -3%;
+}
+
+.service_but {
+    /* border: 1px solid red; */
+    position: absolute;
+    height: 2%;
+    width: 85%;
+    background-color: #635647;
+    right: -5.4%;
+    bottom: -3.3%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.icon {
+    /* border: 1px solid palevioletred; */
+    position: fixed;
+    right: 5.5%;
+    bottom: 8%;
+    width: 8%;
+    z-index: 1;
+}
+
+.icon span.tooltip {
+    white-space: nowrap;
+    display: inline-block;
+    background-color: #b08868d8;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon span.tooltip::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    border-top: 8px solid #b08868d8;
+    border-right: 8px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+section.icon:hover span.tooltip {
+    display: block;
+}
+
+@media (max-width: 991.98px) {
+    .service_left,
+    .service_right {
+        display: block;
+        width: 100%;
+    }
+    .service_left {
+        min-width: 500px;
+        height: 40%;
+    }
+    .service_left>Ul>li>a {
+        margin: 0 0 10px auto;
+    }
+    .service_rflower {
+        height: 16%;
+        width: 10%;
+    }
+    .icon {
+        font-size: 14px;
+    }
+}

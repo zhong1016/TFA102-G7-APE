@@ -1,0 +1,50 @@
+div.body_content_name p {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding: 1% 4%;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+div.body_content_member_data{
+    margin-top: 3%;
+    display: flex;
+}
+div.body_content_member_data img{
+    border: 1px soild red;
+    margin-left: 1.5%;
+    width: 225px;
+    height: 225px;
+}
+
+table{
+    margin-left: 3%;
+    width: 70%;
+    /* padding-bottom: 30%; */
+    /* height: 200%; */
+    border: 1px solid grey;
+}
+th,td{
+    font-size: 2rem;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+div.member_data_modify{
+    display: flex;
+    margin-top: 1.5%;
+}
+div.member_data_modify p{
+    font-size: 2rem;
+}
+div.member_data_modify div a{
+    display: flex;
+}
+
+div.member_data_password{
+    margin-left: 47%;
+}
+
+div.member_data_person{
+    margin-left: 10%;
+}

@@ -1,0 +1,170 @@
+* {
+    font-family: sans-serif, 'Kosugi Maru';
+}
+body {
+	background-color: #F4ECCF;
+	margin: 0;
+}
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #4e5562;
+}
+
+.table-header {
+    background-color: #95A5A6;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: whitesmoke;
+    font-size: 18px;
+    height: 50px;
+}
+.header{
+    font-weight:normal;
+}
+table#myTable td:nth-child(1) {
+    text-align: center;
+    width: 15%;
+}
+table#myTable td:nth-child(2) {
+    text-align: center;
+    width: 15%;
+   
+}
+table#myTable td:nth-child(3) {
+    text-align: center;
+    width: 15%;
+   
+}
+table#myTable td:nth-child(4) {
+    text-align: center;
+    width: 20%;
+}
+table#myTable td:nth-child(5) {
+    text-align: center;
+    width: 15%;
+}
+table#myTable td:nth-child(6) {
+    text-align: center;
+    width: 10%;
+}
+
+.table-row {
+    padding: 5px;
+    color: #555;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.884);
+    border-bottom: 1px solid #915957;
+}
+.col{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* .col-1 {
+    flex-basis: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.col-2 {
+    flex-basis: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.col-3 {
+    flex-basis: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    text-align: justify;
+    margin: auto;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.col-5 {
+    flex-basis: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.col-6 {
+    flex-basis: 10%;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+} */
+
+.table-row img {
+    width: 50%;
+}
+
+.STATUS {
+    display: inline-block;
+    left: 0;
+    padding: 5px 5px;
+    background: rgba(223, 223, 223, 0.8);
+    color: #b08868d8;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 2px;
+}
+
+.STATUS:hover {
+    background: #b08868d8;
+    color: #fff;
+}
+
+.STATUS {
+    border-radius: 5px;
+    border-style: unset;
+}
+
+select {
+    display: block;
+    height: 32px;
+    font-size: 14px;
+    width: 84px;
+    margin-left: 89%;
+    outline: unset;
+}
+
+  
+  #myTable {
+    border-collapse: collapse;
+    width: 95%;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    margin: 20px auto;
+  }
+  
+  /* #myTable  #myTable td {
+    text-align: left; 
+    padding: 12px; 
+  } */
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }

@@ -1,0 +1,293 @@
+/* ��閮剖�� */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: sans-serif, 'Kosugi Maru';
+	color: #27292e;
+}
+
+body {
+	/*background-color: #f4eccf;*/
+	
+}
+
+.main {
+	margin: 25px auto 50px;
+	display: flex;
+	width: 100%;
+	height: 900px;
+}
+
+/* ����� */
+.bg img {
+	z-index: -1;
+	position: absolute;
+	opacity: 0.5;
+	width: 100%;
+}
+
+.main-div {
+	display: flex;
+	margin: auto;
+	width: 1200px;
+	height: 100%;
+	justify-content: space-between;
+}
+.block{
+    position:absolute;
+    width: 60%;
+    height: 30px;
+    right: 0;
+    background-color:rgb(122, 122, 122);
+    opacity: 0.6;
+   
+}
+.block1{
+    position:relative;
+    width: 60%;
+    height: 30px;
+    left: 0;
+    background-color:rgb(122, 122, 122);
+    opacity: 0.6;
+}
+.panel-div {
+	height: 100%;
+	width: 20%;
+	border: solid 2px gray;
+	background-color: #6b88b7;
+	border-radius: 25px 0 0 25px;
+}
+
+/* ��”�摰� */
+.name {
+	margin: 0 auto;
+}
+
+.name img {
+	display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name p {
+	margin-top: 5%;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    line-height: 50px;
+	/* 隤踵摮������憿 */
+}
+
+.function_list>li {
+	font-size: 3rem;
+	margin-top: 3%;
+}
+
+.none {
+	display: none;
+}
+
+/* ���� */
+/* 擐���� */
+div.homepage {
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+}
+
+div.homepage a {
+	color: black;
+}
+
+div.homepage a>p {
+	display: inline-block;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+div.homepage a:hover {
+	color: lightgray;
+}
+
+/* 鈭箏蝞∠�� */
+div.worker_management {
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+}
+
+div.worker_management a {
+	color: black;
+}
+
+div.worker_management a>p {
+	display: inline-block;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+div.worker_management a:hover {
+	color: lightgray;
+}
+/* 蝞∠���” */
+div.worker_management_list {
+	margin-top: 3%;
+	margin-left: 35%;
+}
+
+div.worker_management_list a {
+	text-decoration: none;
+	color: black;
+}
+
+div.worker_management_list a:hover {
+	color: lightgray;
+}
+
+div.worker_management_list a>p {
+	font-size: 1.5rem;
+}
+
+.none {
+	display: none;
+}
+
+/* 瑼Ｚ��” */
+div.report_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+}
+
+div.report_list a {
+	color: black;
+}
+
+div.report_list a>p {
+	display: inline-block;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+div.report_list a:hover {
+	color: lightgray;
+}
+
+
+div.report_list_all {
+	margin-top: 3%;
+	margin-left: 35%;
+}
+
+div.report_list_all a {
+	text-decoration: none;
+	color: black;
+}
+
+div.report_list_all a:hover {
+	color: lightgray;
+}
+
+div.report_list_all a>p {
+	font-size: 1.5rem;
+}
+
+/* 瘣餃�恣��� */
+div.event_management {
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+}
+
+div.event_management a {
+	color: black;
+}
+
+div.event_management a>p {
+	display: inline-block;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+div.event_management a:hover {
+	color: lightgray;
+}
+
+/* ��蝞∠�� */
+div.member_management {
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+}
+
+div.member_management a {
+	color: black;
+}
+
+div.member_management a>p {
+	display: inline-block;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+div.member_management a:hover {
+	color: lightgray;
+}
+
+/* �摰寧� */
+.panel-text {
+	height: 100%;
+    width: 80%;
+    border: solid 2px gray;
+    border-radius: 0px 25px 25px 0px;
+    background-color: rgba(255, 255, 255);
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	height: 150px;
+	justify-content: space-between;
+}
+
+.h1 {
+	width: 70%;
+	height: 100%;
+}
+
+.h1 p {
+	font-size: 2rem;
+	margin: 10%;
+}
+
+.logo {
+	height: 150px;
+	width: 150px;
+}
+
+div.line {
+	width: 100%;
+	border: 1px solid lightgrey;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+button.logout{
+	display: block;
+	margin: 0 auto;
+	margin-top: 15%;
+	font-size: 2rem;
+	border-radius: 15px;
+	padding: 2%;
+	background-color: rgba(135, 206, 250, 0.6);
+	border-style: none;
+	line-height:normal;
+}

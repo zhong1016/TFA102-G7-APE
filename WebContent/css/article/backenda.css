@@ -1,0 +1,229 @@
+.on {
+	display: none;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: rgb(199, 199, 199);
+}
+
+/* ������ */
+div.name {
+	/* border: 1px solid red; */
+	margin-top: 5%;
+}
+
+div.body_content_list {
+	/* border: 1px solid red; */
+	background-color: #577590;
+	width: 20%;
+	border: none;
+	border-radius: 25px 0 0 25px;
+}
+
+div.body_content_list div.name img {
+	display: block;
+	margin: 20px auto;
+	border-radius: 50%;
+	width: 60%;
+}
+
+div.name p {
+	border: none;
+	background-color: #474747b7;
+	height: 40px;
+	color: white;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 5px;
+}
+
+/* ����” */
+div.body-content {
+	/* border: 1px solid red; */
+	width: 1200px;
+	height: auto;
+	margin: auto;
+	display: flex;
+}
+
+div.body_member_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+div.body_member_list a {
+	/* color: black; */
+	/* font-weight: none; */
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+/* 鞎瑕振撠� */
+div.body_buyer_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+div.body_buyer_list a {
+	/* color: black; */
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+li {
+	list-style: none;
+	font-size: 1.0rem;
+	margin: 10px;
+}
+
+.body_buyer_list_all li {
+	margin-top: 5%;
+}
+
+.body_buyer_list_all ul {
+	margin-top: 3%;
+	margin-left: 40%;
+}
+
+/* 鞈�摰嗅�� */
+div.body_seller_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+div.body_seller_list a {
+	/* color: black; */
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+.body_seller_list_all li {
+	margin-top: 5%;
+}
+
+.body_seller_list_all ul {
+	margin-top: 3%;
+	margin-left: 40%;
+}
+
+/* �雿恣��� */
+div.body_stall_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+div.body_stall_list a {
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+/* ���巨�' */
+div.body_ticket_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+div.body_ticket_list a {
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+/* ���恣��� */
+div.body_article_list {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+div.body_article_list a {
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+/* ��銝餃摰� */
+div.body_content_data {
+	width: 80%;
+	/* border: 1px solid gray; */
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 0 25px 25px 0;
+}
+
+div.body_content_data_member {
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+div.body_content_data_member p {
+	font-size: 2.5rem;
+}
+
+#all1 {
+	background-color: aqua;
+	border: bisque 1px solid;
+}
+
+#ttt {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.body_content_data {
+	border: 3px solid black;
+	width: 60%;
+}
+
+.sty {
+	width: 90px;
+	text-align: center;
+}
+
+.topic {
+	width: 390px;
+	text-align: center;
+}
+
+.num {
+	width: 90px;
+	text-align: center;
+}
+
+.author tran {
+	text-align: center;
+}
+
+th, td {
+	padding: 8px 16px;
+	border: steelblue 2px solid;
+	text-align: center;
+
+}
+
+th {
+	background-color: #f7f7f7;
+	color: #5c6b77;
+	font-weight: 600;
+	text-align: center;
+}
+
+#delete{
+	width:30px;
+}
+
+#ori{
+	width:30px
+}
+
+#ttt{
+    margin-top: 20px;
+}

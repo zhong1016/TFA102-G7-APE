@@ -1,0 +1,404 @@
+* {
+	box-sizing: border-box;
+	/* margin: 0;
+            padding: 0; */
+	/* font-size: 0; */
+	font-family: sans-serif, 'Kosugi Maru';
+	color: #4e5562;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+body {
+	background-color: #d3c8af;
+	margin: 0;
+}
+
+.div_bg {
+	position: relative;
+	width: 100%;
+	height: 464px;
+	display: inline-block;
+}
+
+.bg_1 {
+	display: inline-block;
+	width: 100%;
+	position: absolute;
+}
+
+.bg_range {
+	position: relative;
+	width: 90%;
+	height: max-content;
+	padding: 50px 0;
+	margin: 0 5%;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50px;
+	/* z-index: -1; */
+}
+
+.create_data {
+	position: relative;
+	width: 80%;
+	height: 600px;
+	margin: 0 10%;
+	line-height: 35px;
+	/* border-style: groove; */
+}
+
+.create_infor {
+	position: relative;
+	width: 60%;
+	height: 100%;
+	left: 2%;
+	margin: 0;
+	/* color: #4e5562; */
+	display: inline-block;
+	/* border-style: groove; */
+}
+
+.create_pic {
+	position: absolute;
+	width: 45%;
+	height: 100%;
+	left: 55%;
+	/* top: 20%; */
+	display: inline-block;
+	/* border-style: groove; */
+}
+
+.preview {
+	position: relative;
+	width: 60%;
+	height: 50%;
+	left: 25%;
+	top: 5%;
+	display: inline-block;
+	border: 1px solid rgb(104, 104, 104);
+}
+
+#preview img.preview_img {
+	width: 100%;
+}
+
+.preview_on {
+	position: relative;
+	width: 80%;
+	height: 50%;
+	left: 25%;
+	top: 5%;
+	display: inline-block;
+	border: none;
+}
+
+.pic_text {
+	position: absolute;
+	display: inline-block;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	color: rgb(104, 104, 104);
+}
+
+.button_file {
+	position: relative;
+	left: 25%;
+	top: 5%;
+}
+
+.insert_save {
+	display: inline;
+}
+
+.button1 {
+    position: relative;
+    left: 40%;
+    top: 25px;
+    background-color: white;
+    color: #4fbbc4;
+    border-style: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    margin: 0 10px;
+}
+
+.note {
+	position: relative;
+	display: table;
+	top: 35px;
+	/* left: 38%; */
+	margin: 0 auto;
+	font-size: 14px;
+	color: #4e5562;
+}
+
+.button1:hover {
+	background-color: #4fbbc4;
+	color: white;
+}
+
+.greenleaf {
+	position: relative;
+	width: 100%;
+	margin: 20px auto;
+	left: 2.5%;
+
+	/* border-style: groove; */
+}
+
+.brownleaf img {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	/* height: 80px; */
+}
+
+.rent_range {
+	position: relative;
+	width: 80%;
+	min-height: 500px;
+	height: auto;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: block;
+	/* border-style: double; */
+}
+
+.create_infor input {
+	border-radius: 5px;
+	border-style: hidden;
+	height: 25px;
+	outline: none;
+	padding: 10px;
+}
+
+.flower_pic {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 22px;
+    left: 83%;
+    bottom: 177px;
+}
+
+.flower_pic img {
+	width: 100%;
+    transform: scaleX(-1);
+}
+
+.block2 {
+	position: relative;
+	width: 100%;
+	height: 25px;
+	margin: 20px auto 0;
+	background-color: rgba(0, 0, 0, 0.425);
+	top: 32px;
+}
+
+#radio input[type="radio"] {
+	display: none;
+}
+
+#radio input:checked+.button {
+	background: #b08868d8;
+	color: #fff;
+	cursor: default;
+}
+
+#radio .button {
+	display: inline-block;
+	left: 0;
+	padding: 2px 5px;
+	background: #f7f7f7;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 2px;
+}
+
+#radio .button:hover {
+	background: #bbb;
+	color: #fff;
+}
+
+#radio .round {
+	border-radius: 5px;
+}
+
+textarea {
+	width: 90%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	resize: none;
+	outline: unset;
+}
+
+.block_pagetop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 90;
+	/* border-style: double; */
+}
+
+.block_pagetop a {
+	border-radius: 80px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #EEEEEE;
+	opacity: 0.6;
+	font-size: 16px;
+	position: relative;
+	text-align: center;
+	line-height: 80px;
+	transition: all 0.5s 0s ease;
+	text-decoration: unset;
+}
+
+.block_pagetop a span {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -6px;
+	width: 12px;
+	height: 14px;
+	background: url("<%=request.getContextPath()%>/img/activity-img/arrow.png") no-repeat
+		center center;
+	background-size: 26px auto;
+	transition: all 0.5s 0s ease;
+}
+
+.hide {
+	transform: translateX(120%);
+}
+
+.rentRow1, .rentCol1, .cheack {
+	display: inline-block;
+	margin: 5px;
+}
+
+.countRow {
+	position: relative;
+	display: table;
+	top: 15px;
+	margin: 0 auto;
+}
+
+.countRow input {
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	height: 25px;
+	outline: unset;
+	text-align: center;
+}
+
+.countCheack {
+	background-color: #b08868d8;
+	color: #fff;
+	border-style: none;
+	font-size: 16px;
+	border-radius: 18px;
+	padding: 5px 15px 5px 15px;
+}
+
+.rent {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.row {
+	padding: 2px;
+}
+
+.norent {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	border-style: none;
+	border-radius: 25%;
+	margin: 5px 10px;
+	text-align: center;
+	display: inline-block;
+	background-color: rgba(204, 204, 204, 0.671);
+	color: #b08868d8;
+}
+
+.rent_available {
+	background-color: #b08868d8;
+	color: white;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+div.seatCharts-cell {
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	margin: 5px 10px;
+	float: left;
+	text-align: center;
+	outline: none;
+	font-size: 18px;
+}
+
+div.seatCharts-seat {
+	background-color: #B9DEA0;
+	cursor: not-allowed;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.seatCharts-row {
+	height: 35px;
+}
+
+/* ¥i¯² */
+div.seatCharts-seat.available {
+	color: white;
+}
+
+/* ¤£¥i¯² */
+div.seatCharts-seat.unavailable {
+	background-color: rgba(192, 192, 192, 0.8);
+	color: #FFF;
+}
+
+div.seatCharts-container {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+div.seatCharts-seat.focused {
+	color: white;
+}
+
+div.seatCharts-seat.selected {
+	color: white;
+}
+.updatePic{
+	width:140%;
+}

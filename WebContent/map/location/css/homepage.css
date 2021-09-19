@@ -1,0 +1,93 @@
+div.message_board_topic>p {
+	font-size: 4rem;
+	margin-top: 3%;
+	margin-left: 2%;
+}
+
+div.message_board {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	/*     border:1px solid lightgray; */
+	border-radius: 10px;
+	overflow: auto;
+	height: 468.5px;
+}
+
+div.message_board table {
+	width: 100%;
+	overflow: scroll;
+	border-collapse: collapse;
+}
+
+div.message_board table tr.table_head {
+	width: 100%;
+	background-color: lightblue;
+}
+
+div.message_board table tr.table_head th.name {
+	width: 15%;
+	font-size: 1.8rem;
+}
+
+div.message_board table tr.table_head th.content {
+	width: 65%;
+	font-size: 1.8rem;
+}
+
+div.message_board table tr.table_content td {
+	border: 1px solid lightgray;
+	height: 50px;
+	font-size: 20px;
+}
+
+div.message_board table tr.table_head th {
+	font-size: 1.8rem;
+	/* padding-left: 10px; */
+	border: 1px solid lightgray;
+}
+
+div.message_board table tr.table_content td {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+div.message_board table td {
+	font-size: 1rem;
+}
+
+td {
+	text-align: center;
+}
+
+div.text_area {
+	margin-top: 1%;
+	margin-left: 10%;
+}
+
+div.text_area textarea {
+	resize: none;
+	font-size: 1.5rem;
+	width: 80%;
+	height: 150px;
+	border-style: dotted;
+	outline: none;
+	padding: 10px;
+	position: relative;
+	left: 5%;
+}
+
+div.text_button {
+	margin-left: 10%;
+}
+
+div.text_button button {
+	font-size: 1.5rem;
+	position: relative;
+	left: 5%;
+	/* margin-bottom: 10%; */
+}
+

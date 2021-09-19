@@ -1,0 +1,294 @@
+* {
+	box-sizing: border-box;
+	/* margin: 0;
+                padding: 0; */
+	/* font-size: 0; */
+	font-family: sans-serif, 'Kosugi Maru';
+	color: #4e5562;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+body {
+	background-color: #F4ECCF;
+	height: inherit;
+	margin: 0;
+}
+
+.div_bg {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	display: inline-block;
+
+	/* border-style: double; */
+}
+
+.bg_range {
+	position: relative;
+	width: 90%;
+	/* min-height: 1200px; */
+	height: 100px;
+	top: 40px;
+	/* padding: 20px 0; */
+	margin: 0 5%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 50px;
+}
+
+.div_top {
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	/* border-style: double; */
+}
+
+.div_top img {
+	width: 100%;
+}
+
+.card_group {
+	width: 100%;
+	height: 80%;
+}
+
+.Sidebar1 {
+	position: relative;
+	margin: 60px auto 20px;
+	left: 7%;
+	height: 50px;
+	width: 86%;
+	display: inline-block;
+}
+
+.div_button1 {
+	display: inline-block;
+	margin: 30px auto 30px;
+}
+
+.button1 {
+	position: relative;
+	left: 110%;
+	background-color: white;
+	color: #b08868d8;
+	border-style: none;
+	font-size: 20px;
+	border-radius: 30px;
+	padding: 5px 15px 5px 15px;
+	display: inline-block;
+}
+
+.button1:hover {
+	background-color: #b08868d8;
+	color: white;
+}
+
+.container-3 {
+	width: 300px;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+	display: inline-block;
+	bottom: 5px;
+	left: 43px;
+}
+
+.container-3 input#search {
+	width: 403px;
+	height: 50px;
+	background: #ffffff;
+	border: none;
+	font-size: 10pt;
+	float: left;
+	color: #4e5562;
+	padding-left: 45px;
+	padding-top: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 10px;
+	outline: none;
+}
+
+.container-3 .icon {
+	position: absolute;
+	margin-left: 17px;
+	margin-top: 15px;
+	z-index: 1;
+	color: #4e5562;
+	-webkit-transition: all .55s ease;
+	-moz-transition: all .55s ease;
+	-ms-transition: all .55s ease;
+	-o-transition: all .55s ease;
+	transition: all .55s ease;
+}
+
+.block_pagetop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 90;
+	/* border-style: double; */
+}
+
+.block_pagetop a {
+	border-radius: 80px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #EEEEEE;
+	opacity: 0.6;
+	font-size: 16px;
+	position: relative;
+	text-align: center;
+	line-height: 80px;
+	transition: all 0.5s 0s ease;
+	text-decoration: unset;
+	color: unset;
+}
+
+.block_pagetop a span {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -6px;
+	width: 12px;
+	height: 14px;
+	background:
+		url("<%=request.getContextPath()%>/img/activity-img/arrow.png")
+		no-repeat center center;
+	background-size: 26px auto;
+	transition: all 0.5s 0s ease;
+}
+
+.hide {
+	transform: translateX(120%);
+}
+
+div.col1 {
+	order: 2;
+}
+
+div.col2 {
+	order: 1;
+}
+
+.card {
+	margin: 0 5px 15px;
+	opacity: 0.8;
+}
+
+.card:hover {
+	margin: 0 5px 15px;
+	opacity: 1;
+}
+
+.card-img-top {
+	width: 100%;
+	height: 300px;
+	/* opacity: 0.6; */
+}
+
+.card-body {
+	height: 250px;
+}
+
+.btn {
+	position: relative;
+	left: 61%;
+	background-color: #b08868d8;
+	color: #fff;
+	border-style: none;
+	font-size: 16px;
+	border-radius: 18px;
+	padding: 5px 15px 5px 15px;
+	top: 11px;
+}
+
+.btn:hover {
+	background-color: rgb(219, 219, 219);
+	color: #b08868d8;
+}
+
+.block2 {
+	position: relative;
+	width: 100%;
+	height: 25px;
+	margin: 20px auto 0;
+	background-color: rgba(0, 0, 0, 0.425);
+	top: 32px;
+}
+
+.flower_pic {
+	position: relative;
+	display: block;
+	width: 80px;
+	height: 50px;
+	left: 93%;
+	bottom: 163px;
+}
+
+.flower_pic img {
+	width: 100%;
+}
+
+.inner_block {
+	/* display: none; */
+	width: 300px;
+	height: max-content;
+	border-style: groove;
+}
+
+/* .checklist{
+            left: 120%;
+            bottom: 5px;
+        } */
+.checklist>.btn-primary {
+	background-color: white;
+	color: #b08868d8;
+	border-style: none;
+	font-size: 20px;
+	border-radius: 30px;
+	padding: 5px 15px 5px 15px;
+	border-color: none;
+	left: 1214px;
+	/* 	bottom: 50px; */
+	top: -50px;
+}
+
+.checklist>.btn-primary:hover {
+	background-color: #b08868d8;
+	color: white;
+	box-shadow: unset;
+}
+
+.checklist>.btn-check:focus+.btn-primary, .checklist>.btn-primary:focus
+	{
+	background-color: #b08868d8;
+	color: white;
+	box-shadow: unset;
+}
+
+.modal-backdrop {
+	background-color: unset;
+}
+
+.modal-content {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-title {
+	margin-bottom: .5rem;
+	color: brown;
+	font-size: 20px;
+	text-decoration: underline;
+	bottom: 17px;
+	position: relative;
+	width: 220px;
+}
+
+.col-md-4 {
+	margin-bottom: 16px;
+}

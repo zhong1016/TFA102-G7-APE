@@ -1,0 +1,106 @@
+html {
+    overflow: -moz-hidden-unscrollable;
+/*     height: 100%; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+/* 	border: 1px solid gray; */
+    -ms-overflow-style: none;
+    height: 100%;
+    padding: 0% 2% 5% 2%;
+    width: calc(90% + 18px);
+    overflow: auto;
+}
+
+select.custom_select {
+    /* 清除掉預設外觀 */
+    appearance: none;
+    outline: none;
+    background: none;
+    border: 1px solid gray;
+    width: 32%;
+    padding: 5px 10px;
+    background-image: url("https://img.icons8.com/android/24/000000/down.png");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: right 8px center;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.serleaf {
+    /* border: 1px solid olivedrab; */
+    height: 40px;
+/*     font-size: 1rem; */
+    background-image: url(/APE/img/service/greenleaf_long.png);
+    background-repeat: no-repeat;
+}
+
+ul.list {
+    margin: 24px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.list>li {
+    margin-bottom: 30px;
+}
+
+ul.list>li:last-child {
+    margin-bottom: 0;
+}
+
+ul.list>li>a.link_title {
+    display: block;
+    /* width: 100%; */
+    color: white;
+    background-color: #c78b5ad8;
+    box-shadow: 2px 2px 8px 0 rgba(56, 55, 53, 0.33);
+    border-radius: 26px;
+    padding: 8px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul.list>li>a.link_title::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul.list>li>a.link_title button.switch_btn {
+    /* float: right; */
+    display: inline-block;
+    background: none;
+    border: 0;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+ul.list>li>a.link_title button.switch_btn span.-minus {
+    display: none;
+}
+
+ul.list>li>div.inner_block {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-top: 8px;
+    padding: 0 40px;
+    line-height: 1.6;
+    display: none;
+}
+
+ul.list>li.-on>a.link_title button.switch_btn span.-plus {
+    display: none;
+}
+
+ul.list>li.-on>a.link_title button.switch_btn span.-minus {
+    display: inline-block
+}

@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 10px;
+	font-family: sans-serif, 'Kosugi Maru';
+	color: #4e5562;
+}
+
+body {
+	background-color: #f4eccf;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+	height: 900px;
+	/* border: 1px solid red; */
+	justify-content: center;
+}
+
+.loginpage {
+	display: flex;
+	width: 1200px;
+	height: 100%;
+	/* border: 1px solid red; */
+	justify-content: center;
+}
+
+.login_content {
+	border: 1px solid grey;
+	height: 50%;
+	width: 30%;
+	margin-top: 20%;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.title {
+	width: 100%;
+	/* border: 1px solid red; */
+	height: 15%;
+	display: flex;
+	justify-content: center;
+}
+
+.title>img {
+	width: 15%;
+}
+
+.title>p {
+	font-size: 3.5rem;
+	margin-top: 3%;
+}
+
+.login_content div:nth-child(2) {
+	/* border: 1px solid red; */
+	margin-top: 2%;
+}
+
+.login_content div:nth-child(2) p {
+	font-size: 2rem;
+	text-align: center;
+}
+/* 撣唾��憛� */
+.loginsection form div:first-child label {
+	display: block;
+	margin-left: 12%;
+	margin-top: 5%;
+	font-size: 2rem;
+}
+
+.loginsection form div:first-child input {
+	display: block;
+	margin: 0 auto;
+	margin-top: 3%;
+	padding: 3% 3% 3% 3%;
+	font-size: 2rem;
+}
+/* 撣唾��Ⅳ蝝�� */
+.alert{
+	border: 1px solid red;
+}
+
+/* 撖Ⅳ��憛� */
+.loginsection form div:nth-child(3) label {
+	display: block;
+	margin-left: 12%;
+	margin-top: 3%;
+	font-size: 2rem;
+}
+
+.loginsection form div:nth-child(3) input {
+	display: block;
+	margin: 0 auto;
+	margin-top: 3%;
+	padding: 3% 3% 3% 3%;
+	font-size: 2rem;
+}
+
+button {
+	display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    padding: 2%;
+    background-color: rgba(135, 206, 250, 0.6);
+    border-style: none;
+}
+
+/* 撣唾�郎���內 */
+svg {
+	color: red ;
+}
+path{
+	color:red;
+}
+
+.loginsection form div:nth-child(2) {
+	display: flex;
+	margin-left: 15%;
+}
+
+.loginsection form div:nth-child(2) p {
+	font-size: 1rem;
+}
+
+.on {
+	visibility: hidden;
+}
+/* 撖Ⅳ霅血��內 */
+.loginsection form div:nth-child(4) {
+	display: flex;
+	margin-left: 15%;
+	margin-top: 2%;
+}
+
+#password_alert p {
+	color: red;
+}
+
+#account_alert p{
+	color: red;
+}

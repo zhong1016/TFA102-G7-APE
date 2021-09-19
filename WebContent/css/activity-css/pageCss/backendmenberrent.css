@@ -1,0 +1,147 @@
+*{
+	font-family: sans-serif, 'Kosugi Maru';
+}
+body {
+	background-color: #F4ECCF;
+	margin: 0;
+}
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #4e5562;
+}
+
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.responsive-table{
+	overflow-y: auto;
+    height: 600px;
+}
+
+.table-header {
+    background-color: #82a578cc;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: whitesmoke;
+}
+
+.header-1 {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.header-2 {
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.header-3 {
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.header-4 {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.header-5 {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.header-6 {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.table-row {
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #4e5562;
+    background-color: rgba(255, 255, 255, 0.884);
+}
+
+.col-1 {
+    flex-basis: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.col-2 {
+    flex-basis: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.col-3 {
+    flex-basis: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    text-align: justify;
+    margin: auto;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.col-5 {
+    flex-basis: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.col-6 {
+    flex-basis: 10%;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+}
+
+.table-row img {
+    width: 50%;
+}
+
+.STATUS {
+    display: inline-block;
+    left: 0;
+    padding: 5px 5px;
+    background: #b08868b8;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    margin: 2px;
+}
+
+/* .STATUS:hover { */
+/*     background: #b08868d8; */
+/*     color: #fff; */
+/* } */
+
+.STATUS {
+    border-radius: 5px;
+}

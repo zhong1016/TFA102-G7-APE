@@ -1,0 +1,205 @@
+* {
+  font-size: 1.2rem;
+}
+.on {
+  display: none;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: rgb(199, 199, 199);
+}
+
+/* 圖片姓名 */
+
+div.name {
+  /* border: 1px solid red; */
+  margin-top: 5%;
+}
+
+div.body_content_list {
+  /* border: 1px solid red; */
+  background-color: #577590;
+  width: 18%;
+  border: none;
+  border-radius: 25px 0 0 25px;
+}
+
+div.body_content_list div.name img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 60%;
+}
+
+div.name p {
+  border: none;
+  background-color: #474747b7;
+  height: 40px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+}
+
+/* 會員列表 */
+
+div.body-content {
+  /* border: 1px solid red; */
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  display: flex;
+}
+
+div.body_member_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+div.body_member_list a {
+  /* color: black; */
+  /* font-weight: none; */
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+/* 買家專區 */
+
+div.body_buyer_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+div.body_buyer_list a {
+  /* color: black; */
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.body_buyer_list_all li {
+  margin-top: 5%;
+}
+
+.body_buyer_list_all ul {
+  margin-top: 3%;
+  margin-left: 40%;
+}
+
+/* 賣家專區 */
+
+div.body_seller_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+div.body_seller_list a {
+  /* color: black; */
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.body_seller_list_all li {
+  margin-top: 5%;
+}
+
+.body_seller_list_all ul {
+  margin-top: 3%;
+  margin-left: 40%;
+}
+
+/* 攤位管理 */
+
+div.body_stall_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+div.body_stall_list a {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+/* 我的票券' */
+
+div.body_ticket_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+div.body_ticket_list a {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+/* 文章管理 */
+
+div.body_article_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+div.body_article_list a {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+/* 面板主內容 */
+
+div.body_content_data {
+  width: 82%;
+  /* border: 1px solid gray; */
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 25px 25px 0;
+}
+
+div.body_content_data_member {
+  margin-top: 5%;
+}
+
+div.body_content_data_member p {
+  font-size: 2.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  padding: 8px 16px;
+  border: steelblue 2px solid;
+  text-align: center;
+  width: 300px
+}
+
+th {
+  background-color: #f7f7f7;
+  color: #5c6b77;
+  font-weight: 600;
+  text-align: center;
+}
+input {
+  width: 100%;
+  text-align: center;
+
+}
+
+.display{
+  display: none;
+}

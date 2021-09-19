@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>購票介面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="../css/ticket-css/TicketInsert.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-div">
+      <div class="header-img">
+        <a href="/APE/index.html"><img class="logo" src="../img/exhibition-img/APE3.svg" alt="" /></a>
+      </div>
+      <div class="nav" id="header">
+<!--         <span class="header-singin"><a href="">登入</a>&emsp;|&emsp;<a href="">註冊</a></span> -->
+        <ul>
+          <li><a class="a1" href="#">線上商城</a></li>
+          <li>
+            <a class="a1" href="#">展覽活動</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="">全年檔期</a></li>
+              <li class="a2"><a href="">優惠資訊</a></li>
+              <li class="a2"><a href="/APE/ticket/basicTicket.html">報名查詢</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="#">地圖導覽</a></li>
+          <li>
+            <a class="a1" href="#">廠商專區</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="">廠商後台</a></li>
+              <li class="a2"><a href="">場地租借</a></li>
+              <li class="a2"><a href="">活動查詢</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="#">討論區</a></li>
+          <li>
+            <a class="a1" href="#">聯絡客服</a>
+            <ul class="menu-ul">
+              <li class="a2"><a href="">意見回饋</a></li>
+              <li class="a2"><a href="">常見問答</a></li>
+              <li class="a2"><a href="">贈品兌換</a></li>
+            </ul>
+          </li>
+          <li><a class="a1" href="#">會員中心</a></li>
+          <a class="a1-shop" href="#"><img class="shop" src="../img/index-img/shop.png" alt="" /></a>
+        </ul>
+      </div>
+      <input type="checkbox" name="menu-switcher" id="menu-switcher" />
+      <label for="menu-switcher" class="hamburger">
+        <div class="hamburger-line"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="">線上商城</a></li>
+        <li><a href="">展覽活動</a></li>
+        <li><a href="">地圖導覽</a></li>
+        <li><a href="">廠商專區</a></li>
+        <li><a href="">討論區</a></li>
+        <li><a href="">聯絡客服</a></li>
+        <li><a href="">會員中心</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ticketimg">
+      <img src="../img/ticket-img/60.jpg" alt="">
+    </div>
+  </div>
+  <div class="container" style="margin-top:1%;">
+    <div class="container d-flex align-items-center">
+      <div class="banner"></div>
+      <div class="bannertext">
+        <h3>FillOutInformation</h3>
+      </div>
+      <div class="banner"></div>
+    </div>
+    <h2 style="text-align:center;">請填寫報名資料</h2>
+  </div>
+
+
+  <section id="section">
+    <div class="container" style="margin-top: 2%;">
+      <div class="row justify-content-center">
+        <form class="col-3" v-if="ticket">
+          <p style="margin-bottom: 0;">*姓名 / Name</p>
+          <input type="text" style="width:100%;" v-model="Name">{{Name}}
+          <br><br>
+          <p style="margin-bottom: 0;">*電子信箱 / Email</p>
+          <input type="email" style="width: 100%;" v-model="Email">{{Email}}
+          <br><br>
+          <p style="margin-bottom: 0;">*身份字號後六碼 / Identity Card</p>
+          <input type="number" style="width: 100%;" v-model="idCard">{{idCard}}
+          <p style="margin-bottom: 0;">※身分證為現場驗證身份使用！</p>
+          <br><br>
+          <div class="d-flex justify-content-center">
+            <button style="margin:0 20px;" type="button" @click="submit">確定報名</button>
+            <button style="margin:0 20px;" type="button" @click="autoinput">自動填入</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="d-flex justify-content-center">
+    <div id="qrcode">
+    </div>
+  </div>
+
+  <footer> 
+    <div class="footer-div">
+      <div class="footer-img">
+        <a href=""><img class="footer-logo" src="../img/exhibition-img/APE3.svg" alt="" /></a>
+        <div class="footer-p">
+          <h3>艾普藝森國際展覽</h3>
+          <span>104台北市中山區南京東路三段219號5樓</span>
+          <br>
+          <span>業務洽詢：huangwei_wu@wiedu.com</span>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">會員協議</a></li>
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">加入我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <p>
+        <span class="footer-span">
+          <span>Copyrights ©2021 All Rights Reserved by A.P.E</span>
+        </span>
+      <div class="footer-i">
+        <div class="footer-message">
+          <i><a href=""><img src="../img/index-img/Line.png" alt=""></a></i>
+          <i><a href=""><img src="../img/index-img/FB.png" alt=""></a></i>
+          <i><a href=""><img src="../img/index-img/instagram-logo.png" alt=""></a></i>
+        </div>
+      </div>
+      </p>
+    </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs2"></script>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/HF.js"></script>
+  <script src="../js/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs2"></script>
+  <script src="../js/ticket-js/TicketInsert.js"></script>
+  <script src="/APE/js/member/memHeader.js"></script>
+</body>
+</html>
